@@ -114,6 +114,7 @@ type UpdateNotificationSettingsOptimisticUpdate = {
   settings: Partial<RoomNotificationSettings>;
 };
 
+// XXX Stop storing errors in QueryState
 type QueryState =
   | { isLoading: true; error?: never }
   | { isLoading: false; error?: Error };
