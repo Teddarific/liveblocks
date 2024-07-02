@@ -259,7 +259,7 @@ function makeExtrasForClient<U extends BaseUserMeta, M extends BaseMetadata>(
        */
       if (
         lastRequestedAt === undefined ||
-        lastRequestedAt > result.meta.requestedAt
+        lastRequestedAt < result.meta.requestedAt
       ) {
         lastRequestedAt = result.meta.requestedAt;
       }
